@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" 
+    integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        label{
+            background: rgb(168, 166, 166);
+        }
+
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success{
+            background: green;
+        }
+
+        .error{
+            background: red;
+        }
+      </style>
+    </head>
+    <body>
+    <div style="width: max-content;" class="container">
+        <h3>Customer Information</h3>
+
+     <form id="information-form">
+        <div>
+            <label for="id" >Id</label>
+            <input type="number" id="id" class="u-full-width" >
+        </div>
+        <div>
+            <label for="name" >Name</label>
+            <input type="text" id="name" class="u-full-width" >
+        </div>
+        <div>
+            <label for="email" >Email</label>
+            <input type="text" id="email" class="u-full-width" >
+        </div>
+
+        <div>
+            <input style="background: rgb(114, 114, 231); color: aliceblue;" type="submit" value="submit" class="u-full-width" >
+        </div>
+     </form>
+
+       <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="customer-list">
+
+        </tbody>
+       </table>
+        
+    </div>
+
+
+    <div>
+    <center>
+    <div style="width: max-content;  ;" class="containers">
+        <h3>Account Information</h3>
+
+     <form  id="account-form">
+        <div>
+            <label for="name" >Name</label>
+            <input type="text" id="name" class="u-full-width" >
+        </div>
+        <div>
+            <label for="branch" >Branch</label>
+            <input type="text" id="branch" class="u-full-width" >
+        </div>
+        <div>
+            <label for="accountNomber" >Account Nomber</label>
+            <input type="number" id="accountNomber" class="u-full-width" >
+        </div>
+
+        <div>
+            <input style="background: rgb(114, 114, 231); color: aliceblue;"  type="submit" value="submit" class="u-full-width" >
+        </div>
+     </form>
+
+       <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Account Nomber</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="account-list">
+
+        </tbody>
+       </table>
+        
+    </div>
+</center>
+</div>
+
+<center>
+
+<div style="width: max-content;" class="contained">
+    <h3>Transaction Information</h3>
+
+ <form id="transaction-form">
+    <div>
+        <label for="Id" >Id</label>
+        <input type="number" id="Id" class="u-full-width" >
+    </div>
+    <div>
+        <label for="Amount" >Amount</label>
+        <input type="number" id="Amount" class="u-full-width" >
+    </div>
+    <div>
+        <label for="Payment Type" >Payment Type</label>
+        <input type="text" id="Payment Type" class="u-full-width" >
+    </div>
+
+    <div>
+        <input style="background: rgb(114, 114, 231); color: aliceblue;" type="submit" value="submit" class="u-full-width" >
+    </div>
+ </form>
+
+   <table class="u-full-width">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Amount</th>
+            <th>Payment Type</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="transaction-list">
+
+    </tbody>
+   </table>
+    
+</div>
+</center>
+
+        <script src="./App1.js"></script>
+        <script src="./App2.js"></script>
+         <script src="./App3.js"></script> 
+
+</body>
+</html>
